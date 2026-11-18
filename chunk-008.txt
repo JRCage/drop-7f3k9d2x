@@ -1,0 +1,120 @@
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-10-29 20:45  T-15m  78765.20
+    2026-10-29 20:46  T-14m  78617.20
+    2026-10-29 20:47  T-13m  78390.00
+    2026-10-29 20:48  T-12m  78858.99
+    2026-10-29 20:49  T-11m  78892.10
+    2026-10-29 20:50  T-10m  79209.76
+    2026-10-29 20:51  T-9m  79007.50
+    2026-10-29 20:52  T-8m  78908.55
+    2026-10-29 20:53  T-7m  79138.09
+    2026-10-29 20:54  T-6m  79018.09
+    2026-10-29 20:55  T-5m  78925.70
+    2026-10-29 20:56  T-4m  78853.69
+    2026-10-29 20:57  T-3m  78865.80
+    2026-10-29 20:58  T-2m  78767.00
+    2026-10-29 20:59  T-1m  78744.03
+    2026-10-29 21:00  T+0m  78769.33
+    2026-10-29 21:01  T+1m  78907.46
+    2026-10-29 21:02  T+2m  78881.00
+    2026-10-29 21:03  T+3m  78756.01
+    2026-10-29 21:04  T+4m  78786.47
+    2026-10-29 21:05  T+5m  78946.96
+
+MARKET cpc-btc-updown-1h-2026-10-29-2100z
+  market_id: 1922104
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-10-29T21:00:00Z
+  window_close_utc: 2026-10-29T22:00:00Z   (settlement time; venue endDate field = 2026-10-29T22:00:14Z)
+  strike_line_price_to_beat_usd: 78793.72
+  official_settlement_price_usd: 78923.73
+  settled_outcome: UP   (outcomePrices=["1","0"]; Up side first)
+  btc_price_at_close_minus_30m: 79202.66 [coinbase-candles-1m]
+  btc_price_at_close_minus_15m: 79060.67 [coinbase-candles-1m]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-10-29 21:45  T-15m  79059.77
+    2026-10-29 21:46  T-14m  78952.81
+    2026-10-29 21:47  T-13m  78876.82
+    2026-10-29 21:48  T-12m  78924.09
+    2026-10-29 21:49  T-11m  79124.33
+    2026-10-29 21:50  T-10m  79054.69
+    2026-10-29 21:51  T-9m  78979.61
+    2026-10-29 21:52  T-8m  78881.69
+    2026-10-29 21:53  T-7m  78922.50
+    2026-10-29 21:54  T-6m  78972.16
+    2026-10-29 21:55  T-5m  78818.81
+    2026-10-29 21:56  T-4m  78874.81
+    2026-10-29 21:57  T-3m  78976.81
+    2026-10-29 21:58  T-2m  78958.11
+    2026-10-29 21:59  T-1m  78890.57
+    2026-10-29 22:00  T+0m  78811.25
+    2026-10-29 22:01  T+1m  78897.34
+    2026-10-29 22:02  T+2m  78881.94
+    2026-10-29 22:03  T+3m  78791.31
+    2026-10-29 22:04  T+4m  78671.41
+    2026-10-29 22:05  T+5m  78669.00
+
+MARKET cpc-btc-updown-1h-2026-10-29-2200z
+  market_id: 1922087
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-10-29T22:00:00Z
+  window_close_utc: 2026-10-29T23:00:00Z   (settlement time; venue endDate field = 2026-10-29T23:00:14Z)
+  strike_line_price_to_beat_usd: 78923.73
+  official_settlement_price_usd: 78865.02
+  settled_outcome: DOWN   (outcomePrices=["0","1"]; Up side first)
+  btc_price_at_close_minus_30m: 78872.41 [coinbase-candles-1m]
+  btc_price_at_close_minus_15m: 78855.26 [coinbase-candles-1m]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-10-29 22:45  T-15m  78765.51
+    2026-10-29 22:46  T-14m  78819.36
+    2026-10-29 22:47  T-13m  78788.58
+    2026-10-29 22:48  T-12m  78792.75
+    2026-10-29 22:49  T-11m  78862.11
+    2026-10-29 22:50  T-10m  78861.11
+    2026-10-29 22:51  T-9m  78831.58
+    2026-10-29 22:52  T-8m  78786.54
+    2026-10-29 22:53  T-7m  78810.45
+    2026-10-29 22:54  T-6m  78833.05
+    2026-10-29 22:55  T-5m  78865.47
+    2026-10-29 22:56  T-4m  78874.04
+    2026-10-29 22:57  T-3m  78815.35
+    2026-10-29 22:58  T-2m  78843.54
+    2026-10-29 22:59  T-1m  78862.27
+    2026-10-29 23:00  T+0m  78836.80
+    2026-10-29 23:01  T+1m  78718.19
+    2026-10-29 23:02  T+2m  78703.13
+    2026-10-29 23:03  T+3m  78672.81
+    2026-10-29 23:04  T+4m  78661.58
+    2026-10-29 23:05  T+5m  78651.29
+
+MARKET cpc-btc-updown-1h-2026-10-29-2300z
+  market_id: 1923358
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-10-29T23:00:00Z
+  window_close_utc: 2026-10-30T00:00:00Z   (settlement time; venue endDate field = 2026-10-30T00:00:14Z)
+  strike_line_price_to_beat_usd: 78865.02
+  official_settlement_price_usd: 77763.25
+  settled_outcome: DOWN   (outcomePrices=["0","1"]; Up side first)
+  btc_price_at_close_minus_30m: 78554.37 [coinbase-candles-1m]
+  btc_price_at_close_minus_15m: 78199.61 [coinbase-candles-1m]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-10-29 23:45  T-15m  77927.03
+    2026-10-29 23:46  T-14m  77788.00
+    2026-10-29 23:47  T-13m  77848.28
+    2026-10-29 23:48  T-12m  77986.37
+    2026-10-29 23:49  T-11m  77993.07
+    2026-10-29 23:50  T-10m  77878.76
+    2026-10-29 23:51  T-9m  77865.94
+    2026-10-29 23:52  T-8m  77750.53
+    2026-10-29 23:53  T-7m  77820.75
+    2026-10-29 23:54  T-6m  77887.75
+    2026-10-29 23:55  T-5m  77810.44
+    2026-10-29 23:56  T-4m  77738.88
+    2026-10-29 23:57  T-3m  77807.11
+    2026-10-29 23:58  T-2m  77707.19
+    2026-10-29 23:59  T-1m  77780.33
+    2026-10-30 00:00  T+0m  77659.00
+    2026-10-30 00:01  T+1m  77817.92
+    2026-10-30 00:02  T+2m  77843.41
+    2026-10-30 00:03  T+3m  77946.80
+    2026-10-30 00:04  T+4m  77802.93

@@ -1,0 +1,67 @@
+PMUS HOURLY BTC MARKETS — SETTLED OUTCOMES WITH BTC PRICES AROUND SETTLEMENT
+============================================================================
+Built: 2026-11-18 (~16:10Z) for Edgebot, from the trading desk's own records
+plus public unauthenticated venue reads. All times UTC unless stated.
+
+WHAT THIS IS
+------------
+Every settled Polymarket US (PMUS) hourly Bitcoin market in the window the
+desk operated and recorded: windows opening 2026-10-29T00:00Z through
+2026-11-18T15:00Z. One block per market, sorted by close time: 496
+markets, all with status MARKET_STATUS_RESOLVED on the venue record.
+Outcomes: 227 Up / 269 Down.
+
+MARKET STRUCTURE (read this before using the word "strike")
+------------------------------------------------------------
+Series: question "BTC Up or Down Hourly", slugs
+cpc-btc-updown-1h-<window-open %Y-%m-%d-%H%M>z, venue assetPriceTerms
+marketType ASSET_PRICE_MARKET_TYPE_UP_DOWN, indexSymbol "BRTI",
+horizon "1h". These are up/down markets against a reference line, not
+fixed-strike options: the venue's assetPriceTerms.strike field is null.
+The "strike" for each hour is the venue's priceToBeat — the official
+BRTI value at the window open (see rules below) — given per market as
+strike_line_price_to_beat_usd. Each block also carries the venue's
+official settlementPrice (the official BRTI value at the window close).
+Internal consistency was verified for all 495 markets carrying both
+values: outcomePrices agree with settlementPrice >= priceToBeat in
+495/495 cases (Up wins ties, per the rules).
+
+SETTLEMENT SOURCE AND RULES — VERBATIM VENUE TEXT
+-------------------------------------------------
+Settlement index: CF Benchmarks Bitcoin Real-Time Index (BRTI).
+The rules are the market record's own "description" field, retrieved
+from the venue (public polymarket-us SDK, markets.retrieve_by_slug)
+on 2026-11-18. The text is identical for every market in this file
+except the two clock times/dates (and the ET/EDT/EST label around the
+2026-11-01 US daylight-saving fall-back); verified programmatically
+across all 504 records retrieved (496 resolved + 8 not yet resolved).
+
+Verbatim example — market cpc-btc-updown-1h-2026-11-05-1400z
+(window 14:00-15:00Z = 9:00-10:00AM ET):
+
+"This market will settle to Up if the Bitcoin price at 10:00AM ET on Nov 5, 2026 is greater than or equal to the price at 9:00AM ET on Nov 5, 2026. Otherwise, this market will settle to Down. Outcome sourced from CF Benchmarks' Bitcoin Real-Time Index (BRTI), available at https://www.cfbenchmarks.com/data/indices/BRTI. The price at the beginning and at the end of the time range is determined the same way: in the last minute before each of those two times, 60 BRTI prices are collected. The official value for that time is the simple average of these prices, rounded to the nearest 2 decimal places. Please note that this market is about the price according to CF Benchmarks' BRTI, not according to other sources or spot markets."
+
+Verbatim DST example — market cpc-btc-updown-1h-2026-11-01-0500z
+(the repeated 1:00AM hour on fall-back day; windows stay on the UTC
+hour throughout — no 25-hour window exists on this tenor):
+
+"This market will settle to Up if the Bitcoin price at 1:00AM EST on Nov 1, 2026 is greater than or equal to the price at 1:00AM EDT on Nov 1, 2026. Otherwise, this market will settle to Down. Outcome sourced from CF Benchmarks' Bitcoin Real-Time Index (BRTI), available at https://www.cfbenchmarks.com/data/indices/BRTI. The price at the beginning and at the end of the time range is determined the same way: in the last minute before each of those two times, 60 BRTI prices are collected. The official value for that time is the simple average of these prices, rounded to the nearest 2 decimal places. Please note that this market is about the price according to CF Benchmarks' BRTI, not according to other sources or spot markets."
+
+In short, strictly per the text above: each endpoint value is the
+simple average of 60 BRTI prices collected in the last minute before
+that endpoint, rounded to 2 decimals; Up settles if the end value is
+greater than or equal to the start value; ties go to Up. The venue's
+record field endDate (close + ~30 min on early markets, +13 s on the
+example above) is a settlement-processing timestamp, NOT the window
+close; window_close_utc in each block is assetPriceTerms.windowEnd.
+
+BTC PRICE SERIES USED HERE (NOT the settlement index)
+-----------------------------------------------------
+The prices at T-30/T-15 and the per-minute series are Coinbase
+Exchange BTC-USD spot — the desk's reference feed — NOT BRTI. BRTI is
+a multi-constituent index; Coinbase is one constituent, so these
+prices track but do not equal the official BRTI endpoint values
+(which are given per market as priceToBeat / settlementPrice).
+Two segments, labeled per value:
+  [coinbase-tape] fast-tape-logger-2026-11-02 (this desk's logger):
+    every Coinbase BTC-USD trade print via public REST /trades polls,
