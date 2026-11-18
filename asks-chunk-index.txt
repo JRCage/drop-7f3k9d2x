@@ -1,0 +1,19 @@
+PMUS HOURLY BTC SETTLEMENTS WITH PMUS ASKS — CHUNK INDEX
+The file pmus-btc-hourly-settlements-with-asks.csv (67067 characters, sha256 7127e4724ab29bb13501eb64719833abbff7df51301e7b7d16ebdf8e0300bfb9) split into consecutive chunks of at most 5,000 characters each, split on line boundaries so no line is cut. Fetch in order and concatenate with no separator to rebuild the file exactly.
+Columns: the compact settlements CSV (slug, market_id, window_open_utc, window_close_utc, strike_price_to_beat_usd, settlement_price_usd, outcome, btc_price_t_minus_30m_usd, btc_price_t_minus_15m_usd) plus recorded PMUS book asks up_ask/down_ask at T-30m, T-15m, T-5m before close (nearest desk poll at or before the instant, at most 180s before it; empty where the desk recorded no poll — 65 of 496 markets covered, all Oct 29 - Nov 5, 2026; none recorded Nov 6-18).
+Chunks: 14
+
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-001.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-002.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-003.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-004.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-005.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-006.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-007.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-008.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-009.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-010.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-011.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-012.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-013.txt
+https://raw.githubusercontent.com/JRCage/drop-7f3k9d2x/refs/heads/main/asks-chunk-014.txt
