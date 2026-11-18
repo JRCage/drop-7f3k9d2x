@@ -1,0 +1,124 @@
+    2026-11-13 12:46  T-14m  69256.56
+    2026-11-13 12:47  T-13m  69243.81
+    2026-11-13 12:48  T-12m  69245.87
+    2026-11-13 12:49  T-11m  69199.49
+    2026-11-13 12:50  T-10m  69228.03
+    2026-11-13 12:51  T-9m  69154.51
+    2026-11-13 12:52  T-8m  69127.08
+    2026-11-13 12:53  T-7m  69132.24
+    2026-11-13 12:54  T-6m  69173.13
+    2026-11-13 12:55  T-5m  69184.01
+    2026-11-13 12:56  T-4m  69181.66
+    2026-11-13 12:57  T-3m  69126.06
+    2026-11-13 12:58  T-2m  69147.50
+    2026-11-13 12:59  T-1m  69126.81
+    2026-11-13 13:00  T+0m  69066.77
+    2026-11-13 13:01  T+1m  69092.97
+    2026-11-13 13:02  T+2m  69101.27
+    2026-11-13 13:03  T+3m  69130.25
+    2026-11-13 13:04  T+4m  69173.03
+    2026-11-13 13:05  T+5m  69185.19
+
+MARKET cpc-btc-updown-1h-2026-11-13-1300z
+  market_id: 2460983
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-11-13T13:00:00Z
+  window_close_utc: 2026-11-13T14:00:00Z   (settlement time; venue endDate field = 2026-11-13T14:00:13Z)
+  strike_line_price_to_beat_usd: 69145.37
+  official_settlement_price_usd: 69491.26
+  settled_outcome: UP   (outcomePrices=["1","0"]; Up side first)
+  btc_price_at_close_minus_30m: 69078.68 [coinbase-tape]
+  btc_price_at_close_minus_15m: 69760.38 [coinbase-tape]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-11-13 13:45  T-15m  69752.80
+    2026-11-13 13:46  T-14m  69663.66
+    2026-11-13 13:47  T-13m  69669.53
+    2026-11-13 13:48  T-12m  69613.72
+    2026-11-13 13:49  T-11m  69598.31
+    2026-11-13 13:50  T-10m  69615.50
+    2026-11-13 13:51  T-9m  69691.45
+    2026-11-13 13:52  T-8m  69555.63
+    2026-11-13 13:53  T-7m  69548.99
+    2026-11-13 13:54  T-6m  69478.19
+    2026-11-13 13:55  T-5m  69551.05
+    2026-11-13 13:56  T-4m  69572.73
+    2026-11-13 13:57  T-3m  69483.85
+    2026-11-13 13:58  T-2m  69478.83
+    2026-11-13 13:59  T-1m  69494.80
+    2026-11-13 14:00  T+0m  69408.59
+    2026-11-13 14:01  T+1m  69424.42
+    2026-11-13 14:02  T+2m  69405.20
+    2026-11-13 14:03  T+3m  69429.22
+    2026-11-13 14:04  T+4m  69374.89
+    2026-11-13 14:05  T+5m  69344.78
+
+MARKET cpc-btc-updown-1h-2026-11-13-1400z
+  market_id: 2461794
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-11-13T14:00:00Z
+  window_close_utc: 2026-11-13T15:00:00Z   (settlement time; venue endDate field = 2026-11-13T15:00:15Z)
+  strike_line_price_to_beat_usd: 69491.26
+  official_settlement_price_usd: 68898.59
+  settled_outcome: DOWN   (outcomePrices=["0","1"]; Up side first)
+  btc_price_at_close_minus_30m: 69093.58 [coinbase-tape]
+  btc_price_at_close_minus_15m: 69098.07 [coinbase-tape]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-11-13 14:45  T-15m  69074.67
+    2026-11-13 14:46  T-14m  69151.80
+    2026-11-13 14:47  T-13m  69110.07
+    2026-11-13 14:48  T-12m  69003.55
+    2026-11-13 14:49  T-11m  68892.28
+    2026-11-13 14:50  T-10m  68803.49
+    2026-11-13 14:51  T-9m  68925.20
+    2026-11-13 14:52  T-8m  68944.42
+    2026-11-13 14:53  T-7m  68955.15
+    2026-11-13 14:54  T-6m  68982.24
+    2026-11-13 14:55  T-5m  68832.99
+    2026-11-13 14:56  T-4m  68849.89
+    2026-11-13 14:57  T-3m  68895.09
+    2026-11-13 14:58  T-2m  68865.83
+    2026-11-13 14:59  T-1m  68922.54
+    2026-11-13 15:00  T+0m  68854.25
+    2026-11-13 15:01  T+1m  68792.71
+    2026-11-13 15:02  T+2m  68667.51
+    2026-11-13 15:03  T+3m  68748.49
+    2026-11-13 15:04  T+4m  68723.74
+    2026-11-13 15:05  T+5m  68880.67
+
+MARKET cpc-btc-updown-1h-2026-11-13-1500z
+  market_id: 2462894
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-11-13T15:00:00Z
+  window_close_utc: 2026-11-13T16:00:00Z   (settlement time; venue endDate field = 2026-11-13T16:00:16Z)
+  strike_line_price_to_beat_usd: 68898.59
+  official_settlement_price_usd: 68816.77
+  settled_outcome: DOWN   (outcomePrices=["0","1"]; Up side first)
+  btc_price_at_close_minus_30m: 68569.96 [coinbase-tape]
+  btc_price_at_close_minus_15m: 68123.45 [coinbase-tape]
+  per_minute_btc_prices_utc (minute_start -> last trade in minute, Coinbase):
+    2026-11-13 15:45  T-15m  68199.51
+    2026-11-13 15:46  T-14m  68304.00
+    2026-11-13 15:47  T-13m  68370.83
+    2026-11-13 15:48  T-12m  68530.69
+    2026-11-13 15:49  T-11m  68694.89
+    2026-11-13 15:50  T-10m  68767.64
+    2026-11-13 15:51  T-9m  68821.69
+    2026-11-13 15:52  T-8m  68623.50
+    2026-11-13 15:53  T-7m  68653.25
+    2026-11-13 15:54  T-6m  68623.83
+    2026-11-13 15:55  T-5m  68663.52
+    2026-11-13 15:56  T-4m  68668.17
+    2026-11-13 15:57  T-3m  68765.97
+    2026-11-13 15:58  T-2m  68832.90
+    2026-11-13 15:59  T-1m  68800.32
+    2026-11-13 16:00  T+0m  68791.99
+    2026-11-13 16:01  T+1m  68640.00
+    2026-11-13 16:02  T+2m  68610.44
+    2026-11-13 16:03  T+3m  68598.73
+    2026-11-13 16:04  T+4m  68508.01
+    2026-11-13 16:05  T+5m  68416.11
+
+MARKET cpc-btc-updown-1h-2026-11-13-1600z
+  market_id: 2464259
+  question: BTC Up or Down Hourly
+  window_open_utc: 2026-11-13T16:00:00Z

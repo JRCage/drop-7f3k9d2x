@@ -1,0 +1,28 @@
+   (live) at retrieval; 2026-11-18 1700z-2300z windows had not opened
+   (their records exist with priceToBeat unset). Re-pull after they
+   resolve to extend the series past 2026-11-18T16:00Z close.
+2. cpc-btc-updown-1h-2026-10-29-1100z: the venue record carries
+   outcomePrices ["0","1"] (Down) and settlementPrice 80065.70, but
+   its priceToBeat field is null in the venue's current record — the
+   one market of 496 where the line is missing. No desk file found
+   records that hour's line either.
+3. Per-minute NO DATA minutes: 165 minute rows across
+   30 markets have no recorded Coinbase trade
+   (logger downtime / restart seams, concentrated 2026-11-10 to
+   2026-11-12 early UTC hours, plus isolated minutes). Affected
+   markets: cpc-btc-updown-1h-2026-10-30-1900z, cpc-btc-updown-1h-2026-11-03-0200z, cpc-btc-updown-1h-2026-11-04-1600z, cpc-btc-updown-1h-2026-11-04-1800z, cpc-btc-updown-1h-2026-11-05-1300z, cpc-btc-updown-1h-2026-11-05-1500z, cpc-btc-updown-1h-2026-11-10-0200z, cpc-btc-updown-1h-2026-11-10-0800z, cpc-btc-updown-1h-2026-11-10-1400z, cpc-btc-updown-1h-2026-11-10-1600z, cpc-btc-updown-1h-2026-11-10-1800z, cpc-btc-updown-1h-2026-11-10-2000z, cpc-btc-updown-1h-2026-11-11-0100z, cpc-btc-updown-1h-2026-11-11-0300z, cpc-btc-updown-1h-2026-11-11-0500z, cpc-btc-updown-1h-2026-11-11-0700z, cpc-btc-updown-1h-2026-11-11-0900z, cpc-btc-updown-1h-2026-11-11-1100z, cpc-btc-updown-1h-2026-11-11-1300z, cpc-btc-updown-1h-2026-11-11-1500z, cpc-btc-updown-1h-2026-11-11-1800z, cpc-btc-updown-1h-2026-11-11-2300z, cpc-btc-updown-1h-2026-11-12-0100z, cpc-btc-updown-1h-2026-11-12-0300z, cpc-btc-updown-1h-2026-11-12-0500z, cpc-btc-updown-1h-2026-11-12-1100z, cpc-btc-updown-1h-2026-11-12-1300z, cpc-btc-updown-1h-2026-11-12-1500z, cpc-btc-updown-1h-2026-11-12-1600z, cpc-btc-updown-1h-2026-11-12-1700z.
+   In those same stretches a few T-30/T-15 values rest on a trade
+   older than 60 s; each such line is annotated inline with the
+   trade's age (worst case: 2026-11-04-1800z, 338 s).
+4. Prices before 2026-11-02T22:00Z are 1-minute candle closes, not
+   trade prints: within-minute timing detail does not exist for
+   2026-10-29 .. 2026-11-02 in the desk's records (the desk's lane
+   journals poll Coinbase spot roughly once a minute and were not
+   used as a price source here).
+5. Nothing before 2026-10-29: the desk's hourly BTC records begin
+   2026-10-29. The venue series itself may extend earlier; it was
+   not pulled.
+6. PMUS also lists other BTC market types (e.g. day/week up-down and,
+   on the separate global Polymarket venue, multi-strike events).
+   This file covers ONLY the PMUS hourly up/down series named above,
+   per the request.
